@@ -1,0 +1,7 @@
+/* Her har vi styles til vores computer version */
+/* ------------------------------------------------------------- */
+
+$computer: "screen and (min-width: 1200px)";
+@media #{$computer} {
+
+}
