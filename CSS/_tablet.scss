@@ -3,5 +3,8 @@
 
 $tablet: "screen and (min-width: 768px)";
 @media #{$tablet} {
-
+  .logo{
+    width: 140px; !important;
+    height: 80px;   !important;
+  }
 }

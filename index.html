@@ -18,7 +18,10 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/09a5099bff.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,71 +30,62 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
-<div class="head bg-primary text-white d-flex  justify-content-end container-fluid">
+
+
+<div class="head bg-secondary text-white d-flex  justify-content-end container-fluid " >
     <div class="row " >
-        <div class=" col-md-12  m-1">
-            <p class=" text text-white mr-2 ">Fri fragt for over 500 DKK</p>
-            <div class="flag d-flex  justify-content-end m-1 ">
-                <a href="index.html">
-                    <img class="DK m-1" src="Images/danmark.png" alt="danmark" style="width:26px; height:16px;">
-                </a>
-                <a href="engforside.html">
-                    <img class="ENG mr-2 " src="Images/storbritannien.jpg" alt="storbritannien" style="width:26px; height:16px;">
-                </a>
+        <div class=" col-md-12 d-flex  justify-content-end justify-content-around">
+            <div class="søgkurv">
+                <div class="input-group rounded">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                           aria-describedby="search-addon" />
+                    <span class="input-group-text bg-danger border-0" id="search-addon">
+                         <i class="fas fa-search text-light "></i>
+                    </span>
+                </div>
             </div>
+            <a class="fas fa-shopping-basket fa-lg white-text   fa-1x text-white m-auto"></a>
         </div>
     </div>
+
+
 </div>
 
-<div class="container-fluid">
-    <div class=" bg-secondary row ">
+<div class="menu ">
+    <nav class="navbar navbar-expand-lg  bg-secondary navbar-light  container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Image/logohvidfærdig.png" style="width: 200px; height: 80px;" alt="logo"></a>
+        <button class="navbar-toggle collapsed " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggle-icon bg-danger "></span>
+        </button>
+        <div class="navbar-collapse justify-content-center collapse  " id="navbarNav">
+            <ul class="navbar-nav  ">
+                <li class="nav-item active ">
+                    <a class="nav-link text-light" href="index.html">Hjem <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="partnere.html">Partnere</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="abonnement.html">Abonnement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-light" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
 
-        <div class="input-group col-8 col-md-4 offset-md-4 text-center" style=" height: 40px;">
-            <input aria-label="søge" class="form-control border-secondary align-self-center" style="height: 20px; "  type="search" value="Søg...">
-            <button class="btn btn-outline-secondary" style="width: 100px; height: 20px;" type="button">
-                <i class="fa fa-search text-white" aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="some  col-4 col-md-4 text-right d-flex align-content-center">
-            <a class="fab fa-facebook-square fa-1x text-white m-auto" style="cursor: pointer" aria-hidden="true" href="https://www.facebook.com/" target="_blank"> <i>
-            </i>
-            </a>
-            <a  class="fab fa-youtube-square fa-lg white-text   fa-1x text-white m-auto " style="cursor: pointer" aria-hidden="true" href="https://www.youtube.com/" target="_blank"> <i>
-            </i>
-            </a>
-            <a  class="fab fa-instagram fa-lg white-text   fa-1x text-white m-auto" style="cursor: pointer" aria-hidden="true" href=" https://www.instagram.com/" target="_blank"><i>
-            </i>
-            </a>
-        </div>
-    </div>
+    </nav>
+
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="Images/logotype.png" style="width: 150px; height: 30px;" alt="logo"></a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-primary"></span>
-    </button>
-    <div class="navbar-collapse justify-content-end collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link text-primary" href="index.html">Hjem <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-primary" href="abonnement.html">Abonnemet</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-primary" href="partnere.html">Partnere</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  text-primary" href="kontakt.html">Kontakter</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+    function $(param) {
+        
+    }
+
     $(function () {
 
     });
