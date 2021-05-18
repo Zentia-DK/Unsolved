@@ -7163,6 +7163,11 @@ a.text-dark:hover, a.text-dark:focus {
 ul ol {
   margin-bottom: 20px; }
 
+body {
+  margin: 0;
+  /* Ingen kanter i siden af browser */
+  background: rgba(79, 88, 84, 0.85) !important; }
+
 /* BOOTSTRAP SLUT */
 /* ------------------------------------------------------------- */
 /* EGEN CSS START */
@@ -7177,7 +7182,8 @@ ul ol {
 /* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
 body {
   margin: 0;
-  /* Ingen kanter i siden af browser */ }
+  /* Ingen kanter i siden af browser */
+  background-color: #4f5852 !important; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -7212,12 +7218,26 @@ img {
   height: auto;
   /* Højden skal tilpasse sig */ }
 
+.nav-link {
+  padding-right: .5rem !important;
+  padding-left: .5rem !important; }
+
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px; }
+
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */
 /* EGEN RESPONSIVE CSS START */
 /* Her henter vi vores tablet version _tablet.scss */
 /* Her har vi styles til vores tablet version */
 /* ------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 140px !important;
+    height: 80px   !important; } }
+
 /* Her henter vi vores computer version _tablet.scss */
 /* Her har vi styles til vores computer version */
 /* ------------------------------------------------------------- */
