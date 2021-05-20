@@ -30,49 +30,37 @@
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
 
+
 <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" href="index.html"><img src="Image/logohvidfærdig.png" class="img-fluid" alt="Responsive" style="width: 200px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-danger"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-danger "></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-
-
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active bg-danger">
-                        <a class="nav-link text-light " style="font-size:20px"  href="index.html">Hjem <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-light text-right" style="font-size:20px" href="partnere.html">Partnere</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-light " style="font-size:20px" href="abonnement.html">Abonnement</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-light text-center" style="font-size:20px" href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
+        <a class="navbar-brand" href="index.html"><img src="Image/logohvidfærdig.png" class="img-fluid" alt="Responsive" style="width: 200px"></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="index.html">Hjem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="partnere.html">Partnere</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="abonnement.html" >Abonnement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="kontakt.html">Kontakt</a>
+                </li>
             </ul>
-
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-                <button class="btn   bg-danger" type="submit"><i class="fas fa-search text-light "></i></button>
+            <a class="fas fa-shopping-basket fa-lg white-text fa-1x mb-2 m-3 text-white"></a>
+            <form class="d-flex mt-2 ">
+                <input class="form-control me-2  text-light" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success bg-danger" type="submit">Søg</button>
             </form>
-
         </div>
-        <a class="fas fa-shopping-basket fa-lg white-text fa-2x m-1 text-white"></a>
-    </nav>
+    </div>
+</nav>
 
 <!-- Indhold -->
     <div class="jumbotron bg-primary">
@@ -80,17 +68,19 @@
             <div class="col-12 col-md-3 "></div>
             <div class="col-12 col-md-3 text-center text-light">
                 <p>Om Os <br>
-                    -------------------------------- <br>
-                    -------------------------------- <br>
-                    -------------------------------- <br>
-                    -------------------------------- <br>
+                    --------------------------------
+                    --------------------------------
+                    --------------------------------
+                    --------------------------------
                     --------------------------------
                 </p>
-                <p class="lead d-flex justify-content-center text-light mt-1" style="font-size: 5px; !important;">
-                    <a class="btn btn-danger btn-lg d-flex justify-content-center" href="https://danskspildesign.dk/" role="button">Læs mere her</a>
-                </p></div>
+
+                <p class="lead d-flex justify-content-center text-light mt-1" > <br>
+                    <a class="btn btn-danger btn-lg d-flex justify-content-center" style="font-size: 15px !important;" href="https://danskspildesign.dk/" role="button">Læs mere</a>
+                </p>
+            </div>
             <div class="col-12 col-md-3 ">
-                <img src="Image/omos.JPG" class="img-fluid "  style="width:300px; "  alt="Responsive">
+                <img src="Image/omos.JPG" class="img-fluid rounded mx-auto d-block mt-2"  style="width:100% !important; "  alt="Responsive">
             </div>
         </div>
         <div class="col-12 col-md-4">
@@ -100,18 +90,19 @@
         <div class="row align-items-center mt-2">
             <div class="col-12 col-md-3 "></div>
             <div class="col-12 col-md-3">
-                <img src="Image/omos.JPG" class="rounded" mx-auto d-block style="width:300px; height:224px;"  alt="trustpilot">
+                <img src="Image/omos.JPG" class="img-fluid rounded mx-auto d-block mt-2" style="width:100% !important;"  alt="Responsive">
             </div>
             <div class="col-12 col-md-3 text-center text-light">
                 <p>Om Unsolved <br>
-                    -------------------------------- <br>
-                    -------------------------------- <br>
-                    -------------------------------- <br>
-                    -------------------------------- <br>
+                    --------------------------------
+                    --------------------------------
+                    --------------------------------
+                    --------------------------------
                     --------------------------------
                 </p>
-                <p class="lead d-flex justify-content-center text-light mt-1" style="font-size: 5px; !important;">
-                    <a class="btn btn-danger btn-lg d-flex justify-content-center" href="https://danskspildesign.dk/" role="button">Læs mere her</a>
+                <br>
+                <p class="lead d-flex justify-content-center text-light mt-1"><br>
+                    <a class="btn btn-danger btn-lg d-flex justify-content-center " style="font-size: 15px !important;" href="https://danskspildesign.dk/" role="button">Læs mere</a>
                 </p>
             </div>
 
@@ -122,7 +113,7 @@
     </div>
 
 <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted bg-secondary">
+    <footer class="text-center text-lg-start bg-light text-muted bg-secondary mt-3">
         <!-- Section: Social media -->
         <section
                 class="d-flex justify-content-center justify-content-lg-between p-2  bg-primary">
@@ -234,13 +225,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    function $(param) {
-        
-    }
 
-    $(function () {
-
-    });
 </script>
 
 </body>

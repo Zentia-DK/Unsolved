@@ -14,7 +14,7 @@ $theme-colors: (
 );
 
 /* Her retter vi margin og padding (p-1, p-2, pb-1.... og m-1, m-2, mt-1 osv) */
-$spacer: 100px;
+//$spacer: 100;
 
 /* Her importerer vi Bootstrap i vores egen css - Dvs bootstrap css filen skal ikke længere være i vores HTML dokument */
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -29,6 +29,10 @@ body {
 	background: rgba(79,88,84,0.85) !important;
 
 }
+
+
+
+
 /* BOOTSTRAP SLUT */
 /* ------------------------------------------------------------- */
 /* EGEN CSS START */

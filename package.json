@@ -1,5 +1,5 @@
 {
-  "name": "Unsolved",
+  "name": "gulp-opgave",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,7 +16,9 @@
     "url": "https://github.com/Heidi2101/Gulp-opgave/issues"
   },
   "homepage": "https://github.com/Heidi2101/Gulp-opgave#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.0.0",
     "cssnano": "^4.1.10",
