@@ -7568,6 +7568,10 @@ img {
 .list-group-item:hover {
   color: #ffffff; }
 
+.btn {
+  width: 100px !important;
+  height: 40px !important; }
+
 /* EGEN CSS SLUT */
 /* ------------------------------------------------------------- */
 /* EGEN RESPONSIVE CSS START */
