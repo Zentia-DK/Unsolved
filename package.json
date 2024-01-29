@@ -1,7 +1,7 @@
 {
-  "name": "gulp-opgave",
+  "name": "unsolved",
   "version": "1.0.0",
-  "description": "",
+  "description": "Grå = #4F5854        (primary)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Heidi2101/Gulp-opgave.git"
   },
-  "author": "",
+  "author": "Helene",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Heidi2101/Gulp-opgave/issues"
@@ -36,5 +36,6 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "keywords": []
 }
