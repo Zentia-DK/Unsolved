@@ -1,9 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano")
+const GulpPostCss = require("gulp-postcss");
 const terser = require("gulp-terser");
 const rename =require("gulp-rename");
 
